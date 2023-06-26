@@ -1,16 +1,15 @@
 #!/bin/bash
 
 # Check for password pwnage against Have You Been Pwned Database
-# CYEN 2023
 
 # Usage:
 # 1 ./pwndPW
 # 2 Prompt user for input as a security measure
 # 3 <password> Password to Check - Silently read and store user input; STDIN
 # 
-# Add warning and  directions if user passes an argument with the execution
-# Add warning and exit if user inputs empty string
-# Print Usage to avoid printing to 
+# Adds warning and directions if user passes an argument with the execution
+# Adds warning and exit if user inputs empty string
+# Prints usage
 
 if [ "$1" == "-h" ]
 then
