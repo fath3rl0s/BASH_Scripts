@@ -1,6 +1,8 @@
 #!/bin/bash
+#Carlos Enamorado
 
-# Check for password pwnage against Have You Been Pwned Database
+#Query Have You Been Pwned API for password integrity
+
 
 # Usage:
 # 1 ./pwndPW
