@@ -2,6 +2,7 @@
 #Carlos Enamorado
 
 #Query Have You Been Pwned API for password integrity
+#Input a password and see how many times it has been found in a breach!
 
 
 # Usage:
