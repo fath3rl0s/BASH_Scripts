@@ -1,7 +1,8 @@
 #!/bin/bash
-#
+# Carlos Enamorado
+
 # OS Detection
-# Distinguish between MS-Windows/Linux/MacOS
+# Simple script to check OS: MS-Windows/Linux/MacOS
 #
 
 
@@ -22,9 +23,4 @@ DetectOS()
 # Call the Function to perform the check
 DetectOS
 echo "You are currently running $OS"
-
-
-echo
 echo "============================="
-
-curl wttr\.in/"Atlanta"?0?A?u
