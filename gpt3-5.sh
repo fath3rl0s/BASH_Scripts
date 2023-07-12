@@ -1,6 +1,7 @@
 #!/bin/bash
 #Prompt script for ChatGPT
 #Carlos Enamorado
+
 '''
 This script leverages ChatGPT through the command line. 
 A subscription is recommended.
