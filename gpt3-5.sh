@@ -5,7 +5,7 @@
 This script leverages ChatGPT through the command line. 
 A subscription is recommended.
 
-Engine Model can be subsituted although your curl request may need to be modified
+Engine Model can be substituted although your curl request may need to be modified
 
 Consult OpenAI:
 Model Enpoint Compatibility
