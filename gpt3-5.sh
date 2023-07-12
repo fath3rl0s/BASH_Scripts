@@ -7,9 +7,12 @@ A subscription is recommended.
 
 Engine Model can be substituted although your curl request may need to be modified
 
-Consult OpenAI:
-Model Enpoint Compatibility
+Consult OpenAI Model EndPoint:
+Model Endpoint Compatibility
 https://platform.openai.com/docs/models/overview
+
+Consult OpenAI API Requests Documentation:
+https://platform.openai.com/docs/api-reference/making-requests
 '''
 
 #Set API Key
