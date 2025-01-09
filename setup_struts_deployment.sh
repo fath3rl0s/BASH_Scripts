@@ -78,4 +78,4 @@ echo "[INFO] -- Success!"
 echo "[INFO] -- Navigate to http://localhost:30080 to access application"
 echo "[INFO] Finished successfully."
 echo 
-echo "[INFO] -- Please refer to `student-instructions.md` for walkthrough!! Thanks"
+echo "[INFO] -- Please refer to student-instructions.md for walkthrough!! Thanks"
