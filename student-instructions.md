@@ -1,6 +1,6 @@
 # Vulnerable Struts2 (S2-045) Lab
 
-In this lab, you will deployed a Vulnerable Struts2 workload (S2-045 / CVE-2017-5638) in Kubernetes.
+In this lab, you will deploy a Vulnerable Struts2 workload (S2-045 / CVE-2017-5638) in Kubernetes.
 
 1. **Confirm** you can reach the vulnerable app.  
 2. **Exploit** it using a simple malicious payload.  
