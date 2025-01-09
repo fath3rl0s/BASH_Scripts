@@ -25,7 +25,7 @@ DEPLOYMENT_NAME="vulnapp-struts"
 SERVICE_NAME="vulnapp-service"
 
 echo "[INFO] -- Creating namespace '${NAMESPACE}'"
-kubectl create -n "${NAMESPACE}" --dry-run=client -o yaml | kubectl apply -f -
+kubectl create namespace "${NAMESPACE}" --dry-run=client -o yaml | kubectl apply -f -
 
 echo "[INFO] -- Deploying Struts2 vulnerable services."
 
