@@ -40,5 +40,7 @@ In this lab, you will deploy a Vulnerable Struts2 workload (S2-045 / CVE-2017-56
 - However, will not be picked up in **Sysdig** as no process was spawned, no file was accessed, and no network anomalies were detected.
 - On the otherhand, the python script does yield a **Medium** severity in Sysdig.
 - In Sysdig: Navigate to "**Threats**" -->  "**Sysdig Runtime Notable Events**" --> **Event ID: 18191e49f34866df273474732a500c25**
-- In short, a header injection will not trigger in Sysdig but a new system process such as 'cat' will. 
+- In short, a header injection will not trigger in Sysdig but a new system process such as 'cat' will.
+
+
 
