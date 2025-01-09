@@ -6,14 +6,14 @@
 # This script:
 #  1. Creates a namespace called "vulnapp"
 #  2. Deploys a vulnerable Apache Struts2 (S2-045) application
-#  3. Exposes it on NodePort 30080 so the student can access it externally
+#  3. Exposes it on NodePort 30080 so the student can access it internally
 #  4. Checks for successful deployment
-#
-# Usage: ./setup-script.sh
+# Ensure executable permissions - `chmod +x setup_struts_deployment.sh`
+# Usage: ./setup_struts_deployment.sh
 #
 # Requirements:
 #  - A working kubectl context pointing to the correct cluster.
-#  - Sysdig agent is already installed in the cluster (as stated).
+#  - Sysdig agent installed on cluster
 #
 # CARLOS ENAMORADO 1/09/2025
 ###############################################################################
@@ -24,7 +24,7 @@ NAMESPACE="vulnapp"
 DEPLOYMENT_NAME="vulnapp-struts"
 SERVICE_NAME="vulnapp-service"
 
-echo "[INFO] -- Creating namespace '${NAMESPACE}' (if it doesn't already exist)..."
+echo "[INFO] -- Creating namespace '${NAMESPACE}'"
 kubectl create -n "${NAMESPACE}" --dry-run=client -o yaml | kubectl apply -f -
 
 echo "[INFO] -- Deploying Struts2 vulnerable services."
@@ -77,3 +77,5 @@ kubectl rollout status deployment/${DEPLOYMENT_NAME} -n ${NAMESPACE} --timeout=1
 echo "[INFO] -- Success!"
 echo "[INFO] -- Navigate to http://localhost:30080 to access application"
 echo "[INFO] Finished successfully."
+echo 
+echo "[INFO] -- Please refer to `student-instructions.md` for walkthrough!! Thanks"
